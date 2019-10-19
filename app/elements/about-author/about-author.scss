@@ -1,0 +1,149 @@
+.about-author {
+  padding: 80px 0 0 0;
+  color: #a0a3b3;
+
+  @media(max-width: 1200px) {
+    padding: 80px 0 30px 0;
+  }
+
+  @media(max-width: 992px) {
+    padding: 50px 0 30px 0;
+  }
+
+  @media(max-width: 768px) {
+    padding: 25px 0 30px 0;
+  }
+
+  &__br {
+    display: none;
+
+    @media(max-width: 576px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    text-shadow: 0 0 62px rgba(1, 1, 1, 0.55);
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+
+    @media(max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 36px;
+      line-height: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media(max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    max-width: 570px;
+    width: 100%;
+
+    @media(max-width: 1200px) {
+      max-width: 470px;
+    }
+
+    @media(max-width: 992px) {
+      max-width: none;
+    }
+  }
+
+  &__name {
+    color: #1e303d;
+    font-family: "MyriadProCondensed";
+    font-size: 54px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+
+    @media(max-width: 768px) {
+      font-size: 45px;
+      margin: 10px 0 0 0;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 30px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  &__list {
+    margin: 25px 0 0 0;
+    padding: 0 0 0 70px;
+    width: 100%;
+
+    @media(max-width: 576px) {
+      padding: 0 0 0 30px;
+    }
+  }
+
+  &__list-item {
+    color: #3d4a57;
+    font-family: "MyriadProCondensed";
+    font-size: 20px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background: url(img/arrow.png)no-repeat center/cover;
+      width: 39px;
+      height: 40px;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      left: -70px;
+
+      @media(max-width: 576px) {
+        width: 30px;
+        height: 30px;
+        left: -40px;
+      }
+    }
+
+    &:not(:first-child) {
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &__btn {
+    margin: 35px 0 0 50px;
+
+    @media(max-width: 992px) {
+      margin: 35px auto 0 auto;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    right: -20px;
+    top: -50px;
+
+    @media(max-width: 1200px) {
+      top: 0;
+    }
+
+    @media(max-width: 992px) {
+      margin: 60px auto 0 auto;
+      right: 0;
+      top: 0;
+    }
+
+    @media(max-width: 576px) {
+      margin: 30px auto 0 auto;
+    }
+  }
+}

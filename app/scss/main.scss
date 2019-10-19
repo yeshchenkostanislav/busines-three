@@ -1,0 +1,108 @@
+@import "_fonts";
+@import "_mixins";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  min-width: 320px;
+  background: #000 url(../img/bg.png)no-repeat center/cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: $base-font;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    transition: $t-time;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1170px;
+  padding: 0 15px;
+
+  @media (max-width: 1199px) {
+    width: 970px;
+  }
+
+  @media (max-width: 992px) {
+    width: 767px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 22px;
+  width: 347px;
+  height: 79px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.45);
+  background-color: #eed025;
+  background-image: linear-gradient(to top, #f8bd1e 0%, #f6ef31 100%);
+  border: none;
+  border-radius: 60px;
+
+  @media(max-width: 576px) {
+    width: 290px;
+    height: 65px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to top, #f8bd1e 0%, #f6ef31 80%);
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+@import "icons";
+
+//app/elements/banner 
+@import "../elements/banner/banner";
+
+//app/elements/about-author
+@import "../elements/about-author/about-author";
+
+//app/elements/about-author
+@import "../elements/benefits/benefits";
+
+//app/elements/footer
+@import "../elements/footer/footer";

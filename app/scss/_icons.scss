@@ -1,0 +1,41 @@
+.icon {
+  display: inline-block;
+
+  //app/elements/banner/icons
+  &.logo {
+    background: url(img/icons/logo.png)no-repeat center/cover;
+    width: 222px;
+    height: 101px;
+  }
+
+  //app/elements/banner/svg-icons
+  &-ig {
+    width: 23px;
+    height: 24px;
+    fill: #fff;
+  }
+
+  &-twitter {
+    width: 27px;
+    height: 22px;
+    fill: #fff;
+  }
+
+  &-fb {
+    width: 22px;
+    height: 25px;
+    fill: #fff;
+  }
+
+  &-youtube {
+    width: 28px;
+    height: 27px;
+    fill: #fff;
+  }
+
+  &-mouse {
+    width: 35px;
+    height: 33px;
+    fill: #fff;
+  }
+}
